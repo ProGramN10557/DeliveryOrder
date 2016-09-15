@@ -1,0 +1,50 @@
+Scenario : Order for delivery
+Description : A consumer is going to order a delivery through phone calls.
+
+object : customer 
+  state : name , address
+  behaviour : makeCall(), decideorder(),selectfood(),placeorder()
+  
+object : TelPhOperator 
+  state :name, Menu options 
+  behaviour : giveoptions(), TakeAddress(), givecost(),PlaceFoodOrder
+  
+object : phone
+  state: make a phone call 
+  
+class customer{
+string name;
+string address;
+void makecall(food )
+void decideorder(order)
+void selectfood(Food )
+void placeorder(Food)
+}
+
+class TelPhOperator{
+  string name;
+  food Food;
+  food giveoptions()
+  address TakeAdress(customer customer)
+  void PlaceFoodOrder(Food)
+  void givecost( Food)
+}  
+  
+  class  phone{
+  void main(string args);
+  food sandwhich = new food;
+  sandwhich.name = "sandwhich";
+  food salad = new food;
+  salad.name = "salad";
+  food fries = new food;
+  fries.name  = “fries”
+  
+  customer vishaal = new customer;
+  vishaal.name = "vishaal";
+  
+  vishaal.makecall(TelPhOperator)
+  Food food = TelPhOperator.giveoptions;
+  vishaal.placefoodorder(food);
+  vishaal.address;
+  TelPhOperator.givecost(customer);
+  }
