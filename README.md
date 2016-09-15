@@ -1,2 +1,0 @@
-# DeliveryOrder
-Assignment for DeliveryOrder
